@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pede Gás</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="cabecalho">
+    <img src="https://lp.trazgaz.com.br/wp-content/uploads/2022/09/gas-cozinha.png" alt="Logo Pede Gás" class="logo" />
+    <h1>Pede Gás</h1>
+    <p>Pessa seu gas pela nossa pagina, e garanta 10% de desconto no botijão de 13kg</p>
+  </header> 
+
+  <section class="novidades">
+    <h2>🔥 Novidades da Semana</h2>
+    <ul>
+      <li>Garanta 10% de desconto no botijão de 13kg</li>
+      <li>Entrega em até 30 minutos</li>
+      <li>Ganhe brindes nas compras acima de R$ 100</li>
+    </ul>
+  </section>
+  <div class="botijao">
+<img src="https://lp.trazgaz.com.br/wp-content/uploads/2022/09/gas-cozinha.png" alt="">
+
+
+  </div>
+  <section class="formulario">
+    <h2> Fazer Pedido</h2>
+    <form id="form-pedido">
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <input type="number" id="quantidade" placeholder="Quantidade de botijões" required />
+      <input type="text" id="endereco" placeholder="Endereço completo" required />
+      <select id="pagamento" required>
+        <option value="" disabled selected>Forma de pagamento</option>
+        <option value="Dinheiro">Dinheiro</option>
+        <option value="Cartão de crédito">Cartão de crédito</option>
+        <option value="Cartão de débito">Cartão de débito</option>
+        <option value="PIX">PIX</option>
+      </select>
+      <button type="submit">Enviar Pedido no WhatsApp</button>
+    </form>
+  </section>
+
+  <footer class="rodape">
+    <p>&copy; 2025 Pede Gás - Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    document.getElementById("form-pedido").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const quantidade = document.getElementById("quantidade").value;
+      const endereco = document.getElementById("endereco").value;
+      const pagamento = document.getElementById("pagamento").value;
+
+      const mensagem = `Olá! Quero fazer um pedido de gás:\n
+👤 Nome: ${nome}
+🧯 Quantidade: ${quantidade} botijão(ões)
+📍 Endereço: ${endereco}
+💳 Pagamento: ${pagamento}
+✅ Quero meu gás com 10% de desconto!`;
+
+      const numeroWhatsApp = "5564996665600"; // exemplo: 5511999999999
+      const url = `https://wa.me/${5564996665600}?text=${encodeURIComponent(mensagem)}`;
+
+      window.open(url, "_blank");
+    });
+  </script>
+</body>
+</html> 

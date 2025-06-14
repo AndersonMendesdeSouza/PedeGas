@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  text-align: center;
+}
+
+.cabecalho {
+  background-color: #2234ff;
+  color: white;
+  padding: 2rem 1rem;
+}
+.botijao img{
+    width: 200px;
+     
+ }
+ o {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.novidades {
+  padding: 2rem 1rem;
+}
+
+.novidades h2 {
+  color: #2234ff;
+}
+
+.novidades ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.novidades li {
+  margin-bottom: 0.8rem;
+}
+
+.formulario {
+  padding: 2rem 1rem;
+}
+
+.formulario h2 {
+  margin-bottom: 1rem;
+  color: #2234ff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #1ebe5d;
+}
+
+.rodape {
+  background: #2234ff;
+  color: white;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .cabecalho {
+    padding: 1.5rem 1rem;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .novidades h2,
+  .formulario h2 {
+    font-size: 1.4rem;
+  }
+
+  .novidades ul {
+    font-size: 1rem;
+    padding-left: 0;
+  }
+
+  .botijao img {
+    width: 150px;
+  }
+
+  form {
+    padding: 0 1rem;
+  }
+
+  form input, form select, form button {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+
+  .rodape {
+    font-size: 0.8rem;
+  }
+}
